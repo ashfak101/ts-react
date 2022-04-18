@@ -3,6 +3,7 @@ import './App.css';
 import Great from './components/Greet';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
+import Status from './components/Status';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Great name='Hamdan' messageCount={10} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList}/>
+      <Status status='error'/>
     </div>
   );
 }
