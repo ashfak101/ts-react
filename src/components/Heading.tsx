@@ -1,6 +1,10 @@
-const Heading =()=>{
+type HeadingProps ={
+    children: string
+}
+
+const Heading =(props: HeadingProps)=>{
     return(
-        <div>Placeholder text</div>
+        <div>{props.children}</div>
     )
 };
 
