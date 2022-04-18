@@ -2,6 +2,7 @@
 import './App.css';
 import Great from './components/Greet';
 import Heading from './components/Heading';
+import Oscar from './components/Oscar';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
 import Status from './components/Status';
@@ -34,6 +35,10 @@ function App() {
       <PersonList names={nameList}/>
       <Status status='error'/>
       <Heading>PlaceHolder Text </Heading>
+      <Oscar>
+          <Heading>Oscar goes to Leonardo Dicpario !</Heading>
+          <Great name='Hamdan' messageCount={20} isLoggedIn={false}></Great>
+      </Oscar>
     </div>
   );
 }
